@@ -1,0 +1,9 @@
+datasets
+numpy
+omegaconf
+pycocoevalcap
+pysrt
+torch
+tqdm
+vllm
+wtpsplit

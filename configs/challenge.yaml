@@ -1,0 +1,22 @@
+split: challenge
+analysis:
+  - name: gap_length
+    bins:
+      - [1, 5]
+      - [5, 10]
+      - [10, 20]
+      - [20, 30]
+      - [30, 60]
+      - [60, .inf]
+  - name: per_reference
+  - name: attribution_sweep
+    distances_seconds:
+      [0.01, 0.1, 0.5, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0,
+       9.0, 10.0, 15.0, 20.0, 25.0, 30.0, 60.0, 120.0]
+  - name: words_per_minute
+systems:
+  - name: qwen3.5-27b
+    label: qwen
+    realistic: true
+    split_sentences: true
+    split_elements: true

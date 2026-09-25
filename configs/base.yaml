@@ -1,0 +1,40 @@
+paths:
+  reference_data: reference_data
+  generations: generations
+  preprocessed_data: preprocessed_data
+  meta: meta
+
+metrics:
+  - name: dialogue_gaps
+  - name: aligned
+  - name: qa_based
+
+analysis: []
+
+preprocessing:
+  sentence_model: sat-12l-sm
+  element_model: igorsterner/sat-12l-sm-reframed
+
+gaps:
+  collar_seconds: 1.0
+  min_gap_seconds:
+    cider: 1.0
+    meteor: 1.0
+  max_gap_seconds:
+    cider: 20.0
+    meteor: .inf
+
+significance_testing_permutation_test:
+  rounds: 10000
+  alpha: 0.05
+  seed: 2026
+
+temporal:
+  tolerance_seconds: 10.0
+
+qa_based:
+  model: allenai/Olmo-3-1125-32B
+  tensor_parallel_size: 1
+  max_model_len: 32768
+  max_logprobs: 6
+  attribution_all_answers: false
