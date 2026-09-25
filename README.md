@@ -23,7 +23,7 @@ United Kingdom
 
 <div align="center">
 
-[![arxiv](https://img.shields.io/badge/arXiv-2601.07765-b31b1b.svg)](https://arxiv.org/abs/2608.09765)
+[![arxiv](https://img.shields.io/badge/arXiv-2608.09765-b31b1b.svg)](https://arxiv.org/abs/2608.09765)
 [![Dataset](https://img.shields.io/badge/Dataset-REFRAMED-FFD21E.svg)](https://huggingface.co/datasets/igorsterner/reframed)
 
 </div>
